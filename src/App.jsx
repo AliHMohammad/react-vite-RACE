@@ -1,6 +1,15 @@
+import { useState } from "react";
 import reactLogo from "./assets/react.svg";
+import Member from "./components/Member";
+
 
 function App() {
+
+    const [members, setMembers] = useState([
+        
+    ])
+
+
     return (
         <>
             <header>
@@ -9,8 +18,13 @@ function App() {
                 </a>
                 <h1>RACE Your React 🎉</h1>
             </header>
+
+            <Member member={{ firstName: "Peter", lastName: "Lind" }} />
+            <Member member={{ firstName: "Ali", lastName: "Salami" }} />
         </>
     );
 }
+
+
 
 export default App;
